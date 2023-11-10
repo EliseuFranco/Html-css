@@ -73,7 +73,7 @@ section > p{
     background-image: url(pacote-d012/imagens/background002.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 
 .fundo2 > p {
