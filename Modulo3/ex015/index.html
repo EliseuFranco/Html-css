@@ -10,59 +10,175 @@
         }
 
         table{
-            width: 200px;
-            height: 200px;
-            border: 1px solid black;
+            width: 500px;
             border-collapse: collapse;
         }
-
-        td{
+    
+        td, th{
             border: 1px solid black;
-            padding: 3px;
-            text-align: center;
-            vertical-align: baseline;
+            padding: 10px;
+            position: relative;
         }
 
-        .linha{
-            background-color: lightgray;
+        thead, tfoot{
+            background-color: darkgray;
+            color: white;
         }
-        .coluna{
-            background-color: lightgray;
+
+        .num{
+            text-align: right;
+            width: 50px;
         }
+
+        caption{
+            background-color: rgb(69, 64, 64);
+            color: white;
+            padding: 10px;
+        }
+
+        tbody > tr:nth-child(even){
+
+            background-color: lightgrey;
+        }
+        
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(0, 0, 0);
+        }
+
+        
     </style>
 </head>
 <body>
 
-    <h1>Minha primeira tabela</h1>
+    <h1>Tabelas grandes</h1>
+    <!--ANATOMIA PARA TABELAS GRANDES-->
 
     <table>
 
-        <tr> <!--Ptimeira linha-->
-            <td>A1</td> 
-            <td>B1</td> 
-            <td class="coluna">C1</td> 
-        </tr>
+        <caption>
+            População Angolana em 2014
+        </caption>
+        <thead>
+            <tr>
+                <th> Estado
+                <th> População      
+            </tr
+            >
+        </thead>
 
-        <tr class="linha"> <!--2 linha-->
-            <td>A2</td>
-            <td>B2</td>
-            <td class="coluna">C2</td>
-        </tr>
+        <tbody>
+            <tr>
+                <td>Bengo</td>
+                <td class="num">356 641</td>
+            </tr>
+            <tr>
+                <td>Benguela</td>
+                <td class="num">2 231 3855</td>
+            </tr>
 
-        <tr> <!--3 linha-->
-            <td>A3</td> 
-            <td>B3</td> 
-            <td class="coluna">C3</td>
-        </tr>
-            
-        <tr> <!--4 linha-->
-            <td>A4</td> 
-            <td>B4</td> 
-            <td class="coluna">C4</td>
+            <tr>
+                <td>Bié</td>
+                <td class="num">1 455 255</td>
+            </tr>
 
-        </tr>
+            <tr>
+                <td>Cabinda</td>
+                <td class="num">7116 076</td>
+            </tr>
+
+            <tr>
+                <td>Cuando-Cubango</td>
+                <td class="num">534 002</td>
+            </tr>
+
+            <tr>
+                <td>Cuaza Norte</td>
+                <td class="num">443 386</td>
+            </tr>
+
+            <tr>
+                <td>Cuanza Sul</td>
+                <td class="num">1 881 873</td>
+            </tr>
+
+            <tr>
+                <td>Cunene</td>
+                <td class="num">990 087</td>
+            </tr>
+
+            <tr>
+                <td>Huambo</td>
+                <td class="num">2 019 555</td>
+            </tr>
+
+            <tr>
+                <td>Huíla</td>
+                <td class="num">2 497 422</td>
+            </tr>
+
+            <tr>
+                <td>Luanda</td>
+                <td class="num">6 945 386</td>
+            </tr>
+
+            <tr>
+                <td>Lunda Norte</td>
+                <td class="num">862 566	</td>
+            </tr>
+
+            <tr>
+                <td>Lunda Sul</td>
+                <td class="num">537 587</td>
+            </tr>
+
+            <tr>
+                <td>Malanje</td>
+                <td class="num">986 363</td>
+            </tr>
+
+            <tr>
+                <td>Moxico</td>
+                <td class="num">758 568</td>
+            </tr>
+
+            <tr>
+                <td>Uíge</td>
+                <td class="num">1 483 118</td>
+            </tr>
+
+            <tr>
+                <td>Zaire</td>
+                <td class="num">594 428</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+
+            <tr>
+                <th>Total de habitantes</th>
+                <td><strong>25 789 024</strong></td>
+            </tr>
+
+        </tfoot>
+     
 
     </table>
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas hic libero, nemo magnam doloribus iure reiciendis veniam, quod odio tempora in. Fugit saepe neque sequi maiores possimus accusamus ut! Optio. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum facere nemo doloremque magnam expedita, assumenda porro nulla itaque libero molestiae ex perferendis saepe, inventore hic aliquam sapiente velit minus quidem!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error corrupti beatae minus quidem, aperiam, id, laborum nisi quam aliquid exercitationem odio! Quia dolor libero, deserunt quas at quidem rerum magnam?
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quos dolorem ipsa suscipit rem sit minus nam reiciendis, et, vitae cumque. Assumenda aut quibusdam commodi cupiditate ratione ea aspernatur odio.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi alias non. Officia repudiandae, explicabo porro, ad eaque a cum nostrum voluptatem nulla, fuga distinctio atque deleniti quas repellendus quae!</p>
+
+    <script src="script.js">
+
+    </script>
     
 </body>
 </html>
