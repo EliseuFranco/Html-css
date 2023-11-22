@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+/*Todas aou outras medias
+
+Pesquisar por tipical device breakpoint
+    há Para: 
+    Pequenas telas.
+    telemóvel: até 600px até 768px
+    tablet: 768 até 992
+    desktop 992 até 1200
+    Grandes telas mais de 1200
+
+*/
+
+
+@media print {
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body{
+        background-image: url(../imagem/icon-print.png);
+    }
+
+    main{
+        width: 90%;
+        border: 1px solid black;
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after{
+        content: "Impressão feita por Eliseu Franco";
+        text-decoration: overline;
+    }
+}
+
+/* Para dispositivos com resolução de tela pequena Eu posso simplesmente apagar isso já que o site foi construido tendo o conceito de mobile first por questões didáticas e de aprendizado fica.*/
+
+/* Tablets*/
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body{
+        background-image: url(../imagem/back-tablet.jpg);
+    }
+    #phone{display: none;}
+    #tablet{display: block;}
+    #impress{display: none;}
+    #pc{display: none;}
+    #tv{display: none;}
+    
+}
+
+/*Desktop*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body{
+        background-image: url(../imagem/back-pc.jpg)
+    }
+
+    #phone{display: none;}
+    #tablet{display: none;}
+    #impress{display: none;}
+    #pc{display: block;}
+    #tv{display: none;}
+    
+}
+
+/*Tv´s*/
+@media screen and (min-width: 1200px) {
+    body{
+        background-image: url(../imagem/back-tv.jpg);
+    }
+    #phone{display: none;}
+    #tablet{display: none;}
+    #impress{display: none;}
+    #pc{display: none;}
+    #tv{display: block;}
+}
