@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Check box e radio button</h1>
+
+    <form action="Registo.php" method="get">
+
+        <fieldset>
+            <legend>sexo</legend>
+
+            <label for="imas"><input type="radio" name="Sexo" id="imas" value="M"> Masculino</label> <br>
+            <label for="ifem"><input type="radio" name="Sexo" id="ifem" value="F"> feminino</label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Desportos favoritos</legend>
+
+            <label for="ifut"><input type="checkbox" name="Desporto" id="ifut" checked value="Futebol"> Futebol  </label><br>
+
+            <label for="inat"><input type="checkbox" name="Desporto" id="inat"> Natação </label> <br>
+            
+            <label for="iten"><input type="checkbox" name="Desporto" id="iten"> Ténis </label><br>
+
+            <label for="ibas"><input type="checkbox" name="Desporto" id="ibas"> Basquetebol </label><br>
+            <label for="ihand"><input type="checkbox" name="Desporto" id="ihand"> Handball </label><br>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+
+
+    </form>
+    
+</body>
+</html>

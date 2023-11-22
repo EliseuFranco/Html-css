@@ -4,9 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        div{
+            background-color: cadetblue;
+            width: 400px;
+            margin: auto;
+        }
+        #btn{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <form action="Registo.php" method="get">
+
+        <div>
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <p>
+                    <label for="inome">Nome: </label>
+                    <input type="text" name="nome" id="inome">
+                </p>
+                <p>
+                    <label for="imail">E-mail:</label>
+                    <input type="email" name="email" id="imail" required>
+                </p>
+                <p>
+                    <label for="ifone">Telefone: </label>
+                    <input type="tel" name="Telefone" id="ifone" autocomplete="tel" pattern="^\(\d{2}\)d{4,5}-\d{4}$" required >
+                </p>
+            </fieldset>
+        </div>
+
+        <p id="btn">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+
     
 </body>
 </html>
