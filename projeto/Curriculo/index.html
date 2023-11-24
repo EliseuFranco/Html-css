@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculo</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body onresize="mudouTamanho()">
+
+    <header>
+        <h1>Meu currículo</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+            </span>
+        <menu id="imenu">
+
+            <ul>
+                <li><a href="#" id="cv">Currículo</a></li>
+                <li><a href="#" id="pj">Projetos</a></li>
+                <li><a href="contato.html" id="ct">Contatos</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+
+        <div>
+
+            <p id="foto"><img src="imagem/icon-tablet.png" alt="foto"></p>
+
+            <h1>Olá!</h1>
+            <h4>Um pouco de mim</h4>
+
+            <p id="texto">
+                <strong>Eliseu Franco Samulolo</strong>, estudante do 3º ano do curso de Gestão e Informática. Esse é um protfólio criado por onde espelharei alguns dos meus projetos. Boa navegação
+            </p>
+
+        </div>
+       
+
+
+    </main>
+
+    <footer>
+        <hr>
+        <ul class="pe">
+            <li>Telefone</li>
+            <li>+351 922245834</li>
+            <li>E-mail</li>
+            <li>eliseufranco26@hotmail.com</li>
+        </ul>
+    </footer>
+
+
+    <script>
+
+        function mudouTamanho(){
+            if(window.innerWidth >= 768){
+                imenu.style.display = 'block'
+            }
+            else{
+                imenu.style.display = 'none'
+            }
+        }
+
+        function clickMenu(){
+            if (imenu.style.display == 'block'){
+                imenu.style.display = 'none'
+            }
+
+            else{
+                imenu.style.display = 'block'
+            }
+        }
+    </script>
+    
+</body>
+</html>
