@@ -43,19 +43,6 @@
 
         font-size: 2em;
     }
-
-    .campo > input{
-        background-color: #69d4d1;
-        font-size: 1em;
-        width: 90%;
-        height: 100%;
-        transform: translateY(-27%);
-        border-radius: 5px;
-        padding: 5px;
-        padding-right: 18px;
-        border: 0px;
-    }
-    
-    
+ 
 }
 
