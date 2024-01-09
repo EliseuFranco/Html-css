@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+main{
+    
+    position: relative;
+    background-color: #A6A4A5;
+    width: 100vw;
+    height: 100vh;
+
+    box-shadow: 20px 20px black;
+}
+
+.geral{
+    position: absolute;
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#foto{
+    background: url(../imagem/pexels-scott-webb-1022928.jpg) no-repeat center;
+    width: 100%;
+    height: 250px;
+}
+
+#formulario{
+    width: 500px;
+    height: 200px;
+}
+
+#formulario > p{
+    text-align: center;
+    
+}
+form{
+    padding: 20px;
+}
+
+#person{
+    padding: 20px;
+    text-align: center;
+    left: 50%;
+    
+   
+}
+
+label{
+    margin: 20px;
+}
+
+input{
+    margin: 15px;
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+input[type="submit"]{
+    width: 20%;
+    background-color: black;
+    color: white;
+}
+
+
+input[type="submit"]:hover{
+    background-color: #a6a4a58a;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    
+    .geral{
+        width: 90%;
+        height: 100%;
+    }
+   #foto{
+    float: right;
+
+   }
+
+   #formulario{
+    float: right;
+   }
+
+   label{
+    color: red;
+   }
+}
